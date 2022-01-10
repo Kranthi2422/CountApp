@@ -13,8 +13,8 @@ function App() {
       <h2> Current Count is {count}</h2>
 
       <button onClick={() => setCount(0)}>Reset</button>
-      <button onClick={() => setCount(count+1)}>Increase</button>
-      <button onClick ={()=> setCount(count-1)}>Decrease</button>
+      <button onClick={() => count > 9 ? " " : setCount(count+1)}>Increase</button>
+      <button onClick ={()=> count == 0 ? "" : setCount(count-1)}>Decrease</button>
     </div>
   );
 }
