@@ -14,7 +14,7 @@ function App() {
 
       <button onClick={() => setCount(0)}>Reset</button>
       <button onClick={() => count > 9 ? " " : setCount(count+1)}>Increase</button>
-      <button onClick ={()=> count == 0 ? "" : setCount(count-1)}>Decrease</button>
+      <button onClick ={()=> count === 0 ? "" : setCount(count-1)}>Decrease</button>
     </div>
   );
 }
